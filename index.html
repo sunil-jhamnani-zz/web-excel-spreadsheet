@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="ie ie8 lte9 lte8"><![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie ie9 lte9"><![endif]-->
+<!--[if IE]>
+<html lang="en" class="ie"><![endif]-->
+<!--[if !IE]><!-->
+<html lang="en"><!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="referrer" content="always">
+    <title>Excel Spreadsheet</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+</head>
+<body>
+<header>
+    <div class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <h1>Excel Spreadsheet</h1>
+            </div>
+        </div>
+    </div>
+</header>
+<section>
+    <div class="container main-body-content">
+        <div class="btn-group" role="group">
+            <button type="button" class="btn btn-secondary" onclick="ExcelFactory.addRow()">Add Row</button>
+            <button type="button" class="btn btn-secondary" onclick="ExcelFactory.deleteRow()">Delete Row</button>
+            <button type="button" class="btn btn-secondary" onclick="ExcelFactory.addColumn()">Add Column</button>
+            <button type="button" class="btn btn-secondary" onclick="ExcelFactory.deleteColumn()">Delete Column</button>
+        </div>
+        <table class="table-bordered" id="excel"></table>
+    </div>
+</section>
+<script src="js/excelFactory.js"></script>
+<script src="js/onLoad.js"></script>
+</body>
+</html>
